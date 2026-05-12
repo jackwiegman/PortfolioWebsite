@@ -1,0 +1,106 @@
+/*  
+* Author: Jack Wiegman
+* Project: Portfolio Website
+* File Name: styles.css
+* Date: 2025-03-03
+*/
+
+/* CSS Reset */
+body,
+nav,
+header,
+main,
+footer,
+h1,
+div,
+img,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Body and images */
+body {
+    background-color: #ccc;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    clear: right;
+}
+
+header {
+    width: 25%;
+    float: left;
+}
+
+nav {
+    width: 70%;
+    float: right;
+    margin: 5em 3em 0 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.75em;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+main {
+    clear: left;
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.25em;
+}
+
+.action {
+    font-size: 1.35em;
+    color: #666600;
+    font-weight: bold;
+}
+
+.external-link {
+    color: #666600;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact a {
+    color: #666600;
+    text-decoration: none;
+}
+
+.map {
+    border: 2px solid #000;
+}
+
+footer {
+    font-size: 1em;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
