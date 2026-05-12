@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (i < text.length) {
                 el.textContent = text.slice(0, i + 1);
                 i++;
-                setTimeout(step, 65 + Math.random() * 45);
+                setTimeout(step, 55 + Math.random() * 35);
             } else {
                 setTimeout(() => {
                     el.classList.remove('typing');
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function revealTitle() {
         title.style.transition = 'opacity 0.25s ease';
         title.style.opacity    = '1';
-        setTimeout(() => typeInto(title, 'Software Developer'), 150);
+        setTimeout(() => typeInto(title, 'Software Developer'), 100);
     }
 
     // Stagger-reveal name/summary/actions/photo, then type the title last
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Wait for the last element to finish fading before typing title
-        const titleDelay = (revealEls.length - 1) * 120 + 200 + 700;
+        const titleDelay = (revealEls.length - 1) * 120 + 200 + 400;
         setTimeout(revealTitle, titleDelay);
     }
 
