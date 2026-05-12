@@ -613,7 +613,7 @@ footer a:hover {
 }
 
 /* ===== TYPING CURSOR ===== */
-.hero-greeting.typing::after {
+.typing::after {
     content: '|';
     color: var(--green);
     margin-left: 1px;
