@@ -1,111 +1,75 @@
 <!doctype html>
-<!--    
-    Student Name: Jack Wiegman
-    Project: Portfolio Website
-    File Name: about.html
-    Date: 2025-02-16
--->
 <html lang="en">
     <head>
-        <title>About</title>
-
         <meta charset="utf-8" />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About — Jack Wiegman</title>
         <link rel="stylesheet" href="styles/styles.css" />
     </head>
-
     <body>
-        <header>
-            <a href="index.html"
-                ><img src="./images/jack-self-pic-header.png" alt="Picture of myself." />
-            </a>
-        </header>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="nav-brand">jackwiegman</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
 
-        <!-- Hero Image -->
-        <div id="image">
-            <img src="images/hero-image-banner.png" alt="Picture of myself" />
+        <div class="page-hero">
+            <div class="container">
+                <h1>About Me</h1>
+                <p>// background &amp; interests</p>
+            </div>
         </div>
 
-        <main>
-            <div id="Summary">
-                <h3>About Me</h3>
-                <p>
-                    My name is Jack Wiegman and I am a student at Front Range Community College
-                    studying programming. I currently live in Boulder, Colorado and work full time
-                    at a bike shop in the city.
-                </p>
-                <p>
-                    My name is Jack Wiegman and I am a student at Front Range Community College
-                    studying programming. I live in Boulder, Colorado and work full time at a bike
-                    shop in the city, as a mechanic and recently started managing their website as
-                    well as general IT. I currently take classes half time at FRCC as well. I am
-                    working toward an Associates of Applied Science in Programming and hope to get
-                    out and start looking for a job in technology once I graduate.
-                </p>
-                <p>
-                    I was born in Colorado and have lived here for the majority of my life. I like
-                    to skateboard, bike, and enjoy the mountains. I also enjoy technology a lot, I
-                    like to mess around with coding projects in things that I think are interesting
-                    or technologies I’d like to learn more about. I have been working at a bike shop
-                    in Boulder as a mechanic for the past 3 years as I have been working towards a
-                    degree. Recently I have been given more resposibilities, including managing the
-                    shop’s website, managing our network, and other general IT help when needed.
-                </p>
-                <p>
-                    I am studying a variety of programming and general computer topics. I've been
-                    interested in linux, networking, programming in lower level languages like c and
-                    c++, and am now learning more about web development and applications. Since
-                    sophomore year in high school, where I took my first coding class, I’ve always
-                    been learning more about coding, game development, operating systems and other
-                    technologies that sparked my interest. I am currently working my way my degree
-                    and hope to start working in software engineering or cybersecurity and start
-                    working with live productions and systems.
-                </p>
-                <p>
-                    I am hard working, dedicated, and passionate about the things I love. I will
-                    soon graduate and hope to start working in the tech world and be able to work on
-                    and contribute to interesting projects and software. Please contact me with the
-                    provided information if you have any questions or would like more information.
-                </p>
-
-                <h3>Skills</h3>
-                <ul>
-                    <li>C, C++</li>
-                    <li>Python</li>
-                    <li>Linux</li>
-                    <li>Communication</li>
-                    <li>Customer Service</li>
-                </ul>
-                <!--<dl>-->
-                <!--    <dt>Student</dt>-->
-                <!--    <dd>-->
-                <!--        I am currently taking classes half time at FRCC while I am working. I am-->
-                <!--        getting an Associate of Applie Science in Programming and hope to get out-->
-                <!--        and start looking for a job once I graduate. I am studying a variety of-->
-                <!--        programming and general computer topics. I've been interested in linux,-->
-                <!--        networking, programming in lower level languages like c and c++, and am now-->
-                <!--        learning more about web development and applications.-->
-                <!--    </dd>-->
-                <!--</dl>-->
+        <section>
+            <div class="container">
+                <div class="about-text">
+                    <p>
+                        I'm a Computer Science student at Front Range Community College, graduating in
+                        May 2026 with an Associate of Science in Computer Science and a 20-credit
+                        Programming Certificate. I'm based in Boulder, Colorado, where I also work as
+                        an IT Developer and System Administrator at University Bicycles.
+                    </p>
+                    <p>
+                        I've been programming since high school — self-taught, following whatever seemed
+                        interesting at the time. That's taken me through game development and scripting,
+                        into OS internals, compiler and assembler design, and systems programming in C
+                        and C++. I'm most comfortable working close to the hardware, and I spend most
+                        of my time on Linux.
+                    </p>
+                    <p>
+                        My current technical interests are low-level systems programming, computer
+                        architecture, cybersecurity, and open-source tooling. I'm also drawn to the
+                        intersection of infrastructure and software — build systems, system
+                        administration, networked services. I'm actively working toward CompTIA
+                        certifications alongside my degree.
+                    </p>
+                    <p>
+                        Outside of programming I'm a Colorado native who skateboards, bikes, and gets
+                        into the mountains when I can. I also volunteer at Community Cycles Co-op in
+                        Boulder, helping refurbish donated bikes for the community.
+                    </p>
+                </div>
             </div>
-        </main>
+        </section>
 
         <footer>
-            <p>
-                Boulder, CO &nbsp;&#124;&nbsp;
-                <a href="mailto:jwiegman5@student.cccs.edu">jwiegman5@student.cccs.edu</a>
-            </p>
+            <div class="container">
+                <p>
+                    Boulder, CO &nbsp;·&nbsp;
+                    <a href="mailto:jawiegman@gmail.com">jawiegman@gmail.com</a>
+                    &nbsp;·&nbsp;
+                    <a href="https://github.com/jackwiegman" target="_blank" rel="noopener">github.com/jackwiegman</a>
+                </p>
+            </div>
         </footer>
+
     </body>
 </html>

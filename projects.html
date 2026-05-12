@@ -1,59 +1,114 @@
 <!doctype html>
-<!--    
-    Student Name: Jack Wiegman
-    File Name: index.html
-    Date: 2025-02-08
--->
 <html lang="en">
     <head>
-        <title>Title</title>
-
         <meta charset="utf-8" />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Projects — Jack Wiegman</title>
         <link rel="stylesheet" href="styles/styles.css" />
     </head>
-
     <body>
-        <header>
-            <h1>Jack Wiegman</h1>
-            <a href="index.html"
-                ><img src="./images/jack-self-pic-header.png" alt="Picture of myself." />
-            </a>
-        </header>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="nav-brand">jackwiegman</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
 
-        <!-- Hero Image -->
-        <div id="image">
-            <img src="images/hero-image-banner.png" alt="Picture of myself" />
+        <div class="page-hero">
+            <div class="container">
+                <h1>Projects</h1>
+                <p>// selected work</p>
+            </div>
         </div>
 
-        <main>
-            <h3>Projects</h3>
+        <section>
+            <div class="container">
+                <div class="projects-grid">
 
-            <p>Check out my github to see some of my projects.</p>
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            <span class="project-name">8-Bit Assembler &amp; Virtual Machine</span>
+                            <a href="https://github.com/jackwiegman" class="project-link" target="_blank" rel="noopener">GitHub →</a>
+                        </div>
+                        <p class="project-desc">
+                            A custom 8-bit CPU simulator built from scratch in C. Includes a hand-designed
+                            instruction set with byte-addressable memory, a full assembler that parses assembly
+                            source files and generates machine code, and a virtual memory address space that
+                            executes the compiled instructions. Implements a complete execution cycle with
+                            register file, stack pointer, and program counter.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">C</span>
+                            <span class="tag">Assembly</span>
+                        </div>
+                    </div>
 
-            <hr />
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            <span class="project-name">Team Billing System</span>
+                            <a href="https://github.com/jackwiegman" class="project-link" target="_blank" rel="noopener">GitHub →</a>
+                        </div>
+                        <p class="project-desc">
+                            A collaborative mock billing system developed with a team using Git Enterprise.
+                            Responsible for designing and implementing the Database and API classes, building
+                            a PostgreSQL integration layer via libpq with full CRUD operations, and configuring
+                            a CMake build system with cross-platform presets for Linux and Windows.
+                            Database schema and infrastructure managed through Supabase.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">CMake</span>
+                            <span class="tag">Git</span>
+                        </div>
+                    </div>
 
-            <p><a href="https://www.github.com/jackwiegman">Github</a></p>
-        </main>
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            <span class="project-name">Linux Dotfiles</span>
+                            <a href="https://github.com/jackwiegman" class="project-link" target="_blank" rel="noopener">GitHub →</a>
+                        </div>
+                        <p class="project-desc">
+                            Comprehensive system configuration for an Arch Linux environment. Covers systemd
+                            boot loader setup, disk partition configuration, and Hyprland compositor. Features
+                            a custom CLI-oriented development workflow and a Neovim configuration built in Lua
+                            with LSP, debug adapter protocol (DAP), auto-complete, and formatting.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Bash</span>
+                            <span class="tag">Lua</span>
+                            <span class="tag">JSON</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div style="margin-top: 1.5rem; text-align: center;">
+                    <p style="color: var(--text-muted); font-size: 0.85rem; font-family: var(--font-mono); margin-bottom: 1rem;">
+                        // more coming soon — repos being organized
+                    </p>
+                    <a href="https://github.com/jackwiegman" class="btn btn-secondary" target="_blank" rel="noopener">View GitHub Profile</a>
+                </div>
+            </div>
+        </section>
 
         <footer>
-            <p>
-                Boulder, CO&nbsp;&#124;&nbsp;
-                <a href="mailto:jwiegman5@student.cccs.edu">jwiegman5@student.cccs.edu</a
-                >&nbsp;&#124;&nbsp; <a href="tel:303-000-0000">303-000-0000</a>&nbsp;&#124;&nbsp;
-                Github&nbsp;&#124;&nbsp; Other Info
-            </p>
+            <div class="container">
+                <p>
+                    Boulder, CO &nbsp;·&nbsp;
+                    <a href="mailto:jawiegman@gmail.com">jawiegman@gmail.com</a>
+                    &nbsp;·&nbsp;
+                    <a href="https://github.com/jackwiegman" target="_blank" rel="noopener">github.com/jackwiegman</a>
+                </p>
+            </div>
         </footer>
+
     </body>
 </html>

@@ -1,206 +1,198 @@
 <!doctype html>
-<!--    
-    Student Name: Jack Wiegman
-    File Name: resume.html
-    Date: 2025-03-04
--->
 <html lang="en">
     <head>
-        <title>Title</title>
-
         <meta charset="utf-8" />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Resume — Jack Wiegman</title>
         <link rel="stylesheet" href="styles/styles.css" />
     </head>
-
     <body>
-        <header>
-            <h1>Jack Wiegman</h1>
-            <a href="index.html"
-                ><img src="./images/jack-self-pic-header.png" alt="Picture of myself." />
-            </a>
-        </header>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="nav-brand">jackwiegman</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html" class="active">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
 
-        <!-- Hero Image -->
-        <div id="image">
-            <img src="images/hero-image-banner.png" alt="Picture of myself" />
+        <div class="page-hero">
+            <div class="container">
+                <h1>Resume</h1>
+                <p>// Jack Wiegman · Software Developer</p>
+            </div>
         </div>
 
-        <main>
-            <h3>Resume</h3>
+        <section>
+            <div class="container">
 
-            <!-- Result of my markdown resume converted to html with pandoc -->
-            <div id="resume-content">
-                <h1 id="jack-wiegman">Jack Wiegman</h1>
-                <p>
-                    2135 Norwood Ave. | Boulder, CO 80304<br />
-                    720-425-1691 |
-                    <a href="mailto:jawiegman@gmail.com" class="email">jawiegman@gmail.com</a>
-                </p>
-                <hr />
-                <h2 id="professional-summary">Professional Summary</h2>
-                <p>
-                    Resourceful and dedicated part-time student with over five years of experience
-                    in customer service, team collaboration, and technical troubleshooting.
-                    Proficient in Linux, C++, and Python, with a strong ability to diagnose and
-                    debug technical issues. Demonstrates excellent time management, problem-solving,
-                    and communication skills. Passionate about applying technical expertise and
-                    interpersonal abilities to both customer-facing roles and technical projects in
-                    a professional environment.
-                </p>
+                <div class="resume-header">
+                    <img src="images/jack-self-pic-header.png" alt="Jack Wiegman" class="resume-photo" />
+                    <div class="resume-header-info">
+                        <h1>Jack Wiegman</h1>
+                        <p class="resume-header-title">Software Developer</p>
+                        <div class="resume-contact-line">
+                            <span>Boulder, CO</span>
+                            <a href="tel:720-425-1691">720-425-1691</a>
+                            <a href="mailto:jawiegman@gmail.com">jawiegman@gmail.com</a>
+                            <a href="https://github.com/jackwiegman" target="_blank" rel="noopener">github.com/jackwiegman</a>
+                        </div>
+                        <a href="External/JackWiegman_Resume1.pdf" class="btn btn-secondary" download>Download PDF</a>
+                    </div>
+                </div>
 
-                <hr />
+                <div class="resume-body">
 
-                <h2 id="skills">Skills</h2>
-                <ul>
-                    <li><strong>Technical:</strong> Linux, C++, Python, Diagnosis/Debugging</li>
-                    <li>
-                        <strong>Soft Skills:</strong> Problem Solving, Time Management, Teamwork,
-                        Friendly and Personable
-                    </li>
-                    <li>
-                        <strong>Communication:</strong> Written and Verbal Communication, Customer
-                        Service
-                    </li>
-                    <li><strong>Systems:</strong> POS Systems, Cash Handling</li>
-                </ul>
-
-                <hr />
-
-                <h2 id="education">Education</h2>
-
-                <p>
-                    <strong>University of Colorado Boulder</strong> – Boulder, CO<br />
-                    <em>Computer Science Coursework</em><br />
-                    Aug 2020 – Jan 2023
-                </p>
-
-                <p>
-                    <strong>Front Range Community College</strong> – Boulder, CO<br />
-                    <em>Pursuing Associate of Applied Science (AAS) in Programming</em><br />
-                    Jan 2023 – Present
-                </p>
-
-                <hr />
-
-                <h2 id="professional-experience">Professional Experience</h2>
-                <p>
-                    <strong>DICK’S Sporting Goods</strong> – Littleton, CO &amp; Loveland, CO<br />
-                    <em>Sales Associate</em><br />July 2019 – July 2021
-                </p>
-
-                <ul>
-                    <li>
-                        Delivered exceptional customer service by assisting with product inquiries
-                        and providing tailored recommendations.
-                    </li>
-                    <li>
-                        Maintained a clean and organized store environment to ensure a positive
-                        shopping experience.
-                    </li>
-                    <li>
-                        Operated POS systems and managed cash transactions with accuracy and
-                        professionalism.
-                    </li>
-                    <li>
-                        Performed regular stock management, including lifting and handling
-                        large/heavy items.
-                    </li>
-                    <li>
-                        Communicated effectively with both customers and team members, ensuring
-                        smooth operations.
-                    </li>
-                    <li>
-                        Managed time efficiently to balance customer service and in-store
-                        responsibilities.
-                    </li>
-                </ul>
-                <p>
-                    <strong>University Bicycles</strong> – Boulder, CO<br />
-                    <em>Service Writer / Mechanic</em><br />
-                    <em>Website Development &amp; Design</em> <br />March 2022 – Present
-                </p>
-                <ul>
-                    <li>
+                    <div class="resume-section">
+                        <h2>Summary</h2>
                         <p>
-                            Oversaw the repair process in a fast-paced environment, managing
-                            multiple technical projects at once.
+                            Computer Science student with 8+ years of self-taught programming experience.
+                            Love to build things and understand how they work. Developed an 8-bit assembler
+                            with virtual memory execution, and implemented a PostgreSQL backend with CMake
+                            build system. Comfortable at the command line with familiarity in both Unix and
+                            Windows environments.
                         </p>
-                    </li>
-                    <li>
-                        <p>
-                            Diagnosed mechanical issues, leveraging problem-solving skills to
-                            provide effective solutions.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Coordinated repair schedules, optimizing workflow and ensuring on-time
-                            project completion.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Wrote clear technical documentation and communicated complex issues to
-                            customers in an understandable manner.
-                        </p>
-                    </li>
-                    <li><p>Day to day management of the store website.</p></li>
-                    <li>
-                        <p>Keeping track of inventory discrepencies and importing new items.</p>
-                    </li>
-                    <li><p>Developing and launching new website elements and components.</p></li>
-                    <li>
-                        <p>
-                            Managing general technology issues and troubleshooting throughout the
-                            business
-                        </p>
-                    </li>
-                </ul>
+                    </div>
 
-                <p>
-                    <strong>Community Cycles Co-op</strong> – Boulder, CO<br />
-                    <em>Volunteer Mechanic</em><br />
-                    Ongoing
-                </p>
+                    <div class="resume-section">
+                        <h2>Technical Skills</h2>
+                        <div class="skills-table">
+                            <div class="skills-row">
+                                <span class="skills-row-label">Languages</span>
+                                <span class="skills-row-value">C, C++, Python, Java, Bash, SQL, Lua, Assembly</span>
+                            </div>
+                            <div class="skills-row">
+                                <span class="skills-row-label">Tools</span>
+                                <span class="skills-row-value">Linux, Git, CMake, GDB, Windows Server, SQL Server, SQLite</span>
+                            </div>
+                            <div class="skills-row">
+                                <span class="skills-row-label">Concepts</span>
+                                <span class="skills-row-value">Computer Architecture, Compiler/Assembler Design, Data Structures, Algorithms, Database Design, Network Fundamentals</span>
+                            </div>
+                        </div>
+                    </div>
 
-                <ul>
-                    <li>
-                        Refurbish donated bicycles, applying diagnostic and repair skills to ensure
-                        high-quality, affordable bikes for the community.
-                    </li>
-                    <li>
-                        Collaborated with a team of volunteers to maintain efficient operations and
-                        service.
-                    </li>
-                    <li>
-                        Utilized time management skills to prioritize repairs and complete tasks in
-                        a timely manner.
-                    </li>
-                </ul>
+                    <div class="resume-section">
+                        <h2>Projects</h2>
 
-                <hr />
+                        <div class="resume-entry">
+                            <div class="resume-entry-header">
+                                <span class="resume-entry-title">8-Bit Assembler &amp; Virtual Machine</span>
+                                <span class="resume-entry-meta">C, Assembly &nbsp;·&nbsp; <a href="https://github.com/jackwiegman" target="_blank" rel="noopener">GitHub</a></span>
+                            </div>
+                            <ul>
+                                <li>Designed custom 8-bit CPU simulator with custom instruction set and byte-addressable memory</li>
+                                <li>Developed assembler parsing assembly source files and generating machine code</li>
+                                <li>Implemented virtual memory address space executing compiled machine code instructions</li>
+                                <li>Built register file, stack pointer, and full execution cycle</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-entry">
+                            <div class="resume-entry-header">
+                                <span class="resume-entry-title">Team Billing System</span>
+                                <span class="resume-entry-meta">C++, PostgreSQL, CMake, Git &nbsp;·&nbsp; <a href="https://github.com/jackwiegman" target="_blank" rel="noopener">GitHub</a></span>
+                            </div>
+                            <ul>
+                                <li>Worked collaboratively with a team to design and build a mock billing system using Git Enterprise</li>
+                                <li>Designed and implemented Database and API classes with PostgreSQL integration using libpq</li>
+                                <li>Built database connection layer and helper functions for CRUD operations</li>
+                                <li>Configured CMake build system with cross-platform presets (Linux/Windows) and libpq dependency integration</li>
+                                <li>Set up PostgreSQL database schema and connection infrastructure using Supabase</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-entry">
+                            <div class="resume-entry-header">
+                                <span class="resume-entry-title">Linux Dotfiles</span>
+                                <span class="resume-entry-meta">Bash, Lua, JSON &nbsp;·&nbsp; <a href="https://github.com/jackwiegman" target="_blank" rel="noopener">GitHub</a></span>
+                            </div>
+                            <ul>
+                                <li>Comprehensive system configuration for Arch Linux environment</li>
+                                <li>Configured systemd boot loader/init, disk partitions, and Hyprland window manager</li>
+                                <li>Custom workflow with CLI tool, terminal emulator, and development tool configurations</li>
+                                <li>Neovim text editor configuration with LSP and debug adapter support, formatting, and auto-complete</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h2>Experience</h2>
+                        <div class="resume-entry">
+                            <div class="resume-entry-header">
+                                <span class="resume-entry-title">IT Developer &amp; System Administrator</span>
+                                <span class="resume-entry-meta">January 2023 – Present</span>
+                            </div>
+                            <p class="resume-entry-org">University Bicycles &nbsp;·&nbsp; Boulder, CO</p>
+                            <ul>
+                                <li>Led Windows 10 to 11 migration across 10+ workstations with minimal operational downtime</li>
+                                <li>Administer Windows Server 2012 with SQL Server database for retail management software</li>
+                                <li>Perform database backup operations and integrity validation using SQL query scripts and DBCC commands</li>
+                                <li>Diagnosed backup issues and disk failure using Linux recovery tools</li>
+                                <li>Maintain e-commerce website on Workstand platform, implementing HTML/CSS modifications</li>
+                                <li>Provide end-user support and hardware/software troubleshooting for staff and customers</li>
+                                <li>Managed hardware procurement, deployment, and system upgrades for point-of-sale infrastructure</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h2>Education</h2>
+
+                        <div class="resume-entry">
+                            <div class="resume-entry-header">
+                                <span class="resume-entry-title">University of Colorado Boulder</span>
+                                <span class="resume-entry-meta">2020 – 2022</span>
+                            </div>
+                            <ul>
+                                <li>Completed coursework in Computer Science fundamentals</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-entry">
+                            <div class="resume-entry-header">
+                                <span class="resume-entry-title">Front Range Community College</span>
+                                <span class="resume-entry-meta">2023 – May 2026</span>
+                            </div>
+                            <p class="resume-entry-org">Larimer, CO</p>
+                            <ul>
+                                <li>Associate of Science in Computer Science — Expected May 2026</li>
+                                <li>20-Credit Programming Certificate — Conferring May 2026</li>
+                                <li>Relevant coursework: Computer Architecture, Python, Java, Advanced C++, Object Oriented Programming</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h2>Additional</h2>
+                        <div class="resume-entry">
+                            <ul>
+                                <li>8+ years programming experience (self-taught since high school)</li>
+                                <li>Advanced Mathematics: Calculus III, Differential Equations</li>
+                                <li>Interest in Linux/open-source communities, cybersecurity, and CTF competitions</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-
-            <h4>Subcontent</h4>
-        </main>
+        </section>
 
         <footer>
-            <p>
-                Boulder, CO&nbsp;&#124;&nbsp;
-                <a href="mailto:jwiegman5@student.cccs.edu">jwiegman5@student.cccs.edu</a>
-            </p>
+            <div class="container">
+                <p>
+                    Boulder, CO &nbsp;·&nbsp;
+                    <a href="mailto:jawiegman@gmail.com">jawiegman@gmail.com</a>
+                    &nbsp;·&nbsp;
+                    <a href="https://github.com/jackwiegman" target="_blank" rel="noopener">github.com/jackwiegman</a>
+                </p>
+            </div>
         </footer>
+
     </body>
 </html>

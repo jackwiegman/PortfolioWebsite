@@ -1,84 +1,72 @@
 <!doctype html>
-<!--    
-    Student Name: Jack Wiegman
-    File Name: index.html
-    Date: 2025-02-08
--->
 <html lang="en">
     <head>
-        <title>Title</title>
-
         <meta charset="utf-8" />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact — Jack Wiegman</title>
         <link rel="stylesheet" href="styles/styles.css" />
     </head>
-
     <body>
-        <header>
-            <h1>Jack Wiegman</h1>
-            <a href="index.html"
-                ><img src="./images/jack-self-pic-header.png" alt="Picture of myself." />
-            </a>
-        </header>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="nav-brand">jackwiegman</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
         </nav>
 
-        <!-- Hero Image -->
-        <div id="image">
-            <img src="images/hero-image-banner.png" alt="Picture of myself" />
+        <div class="page-hero">
+            <div class="container">
+                <h1>Contact</h1>
+                <p>// get in touch</p>
+            </div>
         </div>
 
-        <main>
-            <div id="contact">
-                <h3>Contact Me</h3>
-
-                <p>
-                    If you have questions or would otherwise like to contact me, please use the
-                    following methods to reach out.
-                </p>
-
-                <dl>
-                    <dt>Email</dt>
-                    <dd>
-                        <a href="mailto:jwiegman5@student.cccs.edu">jwiegman5@student.cccs.edu</a>
-                    </dd>
-                    <dt>Github</dt>
-                    <dd>
-                        <a href="https://www.github.com/jackwiegman"
-                            ><span class="external-link">See my projects!</span></a
-                        >
-                    </dd>
-                    <dt>Education</dt>
-                    <dd>Front Range Community College</dd>
-                    <dd>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1078.396215216664!2d-105.12830806669149!3d40.138607232007075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876bfa1e4c17ce89%3A0x4ee63517edd78bb8!2sClassroom%20Building%2C%202121%20Miller%20Dr%2C%20Longmont%2C%20CO%2080501!5e0!3m2!1sen!2sus!4v1739929070527!5m2!1sen!2sus"
-                            width="600"
-                            height="450"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                            class="map"
-                        ></iframe>
-                    </dd>
-                </dl>
+        <section>
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <p class="contact-card-label">Email</p>
+                        <p class="contact-card-value">
+                            <a href="mailto:jawiegman@gmail.com">jawiegman@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="contact-card">
+                        <p class="contact-card-label">GitHub</p>
+                        <p class="contact-card-value">
+                            <a href="https://github.com/jackwiegman" target="_blank" rel="noopener">github.com/jackwiegman</a>
+                        </p>
+                    </div>
+                    <div class="contact-card">
+                        <p class="contact-card-label">Phone</p>
+                        <p class="contact-card-value">
+                            <a href="tel:720-425-1691">720-425-1691</a>
+                        </p>
+                    </div>
+                    <div class="contact-card">
+                        <p class="contact-card-label">Location</p>
+                        <p class="contact-card-value">Boulder, CO</p>
+                    </div>
+                </div>
             </div>
-        </main>
+        </section>
 
         <footer>
-            <p>
-                Boulder, CO&nbsp;&#124;&nbsp;
-                <a href="mailto:jwiegman5@student.cccs.edu">jwiegman5@student.cccs.edu</a>
-            </p>
+            <div class="container">
+                <p>
+                    Boulder, CO &nbsp;·&nbsp;
+                    <a href="mailto:jawiegman@gmail.com">jawiegman@gmail.com</a>
+                    &nbsp;·&nbsp;
+                    <a href="https://github.com/jackwiegman" target="_blank" rel="noopener">github.com/jackwiegman</a>
+                </p>
+            </div>
         </footer>
+
     </body>
 </html>

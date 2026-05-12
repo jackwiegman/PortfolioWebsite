@@ -1,79 +1,162 @@
 <!doctype html>
-<!--    
-    Student Name: Jack Wiegman
-    File Name: index.html
-    Date: 2025-02-08
--->
 <html lang="en">
     <head>
-        <title>Title</title>
-
         <meta charset="utf-8" />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jack Wiegman — Software Developer</title>
         <link rel="stylesheet" href="styles/styles.css" />
     </head>
-
     <body>
-        <header>
-            <a href="index.html"
-                ><img src="./images/jack-self-pic-header.png" alt="Picture of myself." />
-            </a>
-        </header>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="nav-brand">jackwiegman</a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
 
-        <!-- Hero Image -->
-        <div id="image">
-            <img
-                src="images/hero-image-banner.png"
-                alt="Abstract dark background name and portfolio titled over it"
-            />
-        </div>
-
-        <main>
-            <div>
-                <h3>Portfolio</h3>
-                <p>
-                    Welcome to my Portfolio! My name is Jack Wiegman and am a student studying
-                    programming at FRCC. Take a look around to learn more!
+        <section class="hero">
+            <div class="container">
+                <p class="hero-greeting">whoami</p>
+                <h1 class="hero-name">Jack Wiegman</h1>
+                <p class="hero-title">Software Developer</p>
+                <p class="hero-summary">
+                    CS student with 8+ years of self-taught programming experience.
+                    I build low-level systems, write C and C++, and live in the terminal.
+                    Graduating May 2026 from Front Range Community College.
                 </p>
-
-                <div id="home-resource-list">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Me</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="resume.html">Resume</a></li>
-                        <li><a href="contact.html">Contact Me</a></li>
-                    </ul>
+                <div class="hero-actions">
+                    <a href="projects.html" class="btn btn-primary">View Projects</a>
+                    <a href="External/JackWiegman_Resume1.pdf" class="btn btn-secondary" download>Download Resume</a>
+                    <a href="https://github.com/jackwiegman" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
                 </div>
-
-                <h4>Overview</h4>
-
-                <p>
-                    I am currently a student at Front Range Community College studying programming.
-                    I also work at a bike shop in Boulder, CO as a mechanic as well as managing the
-                    shop's website and general IT.
-                    <span class="action">See my work experience here.</span>
-                </p>
             </div>
-        </main>
+        </section>
+
+        <section class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-group">
+                        <span class="skill-label">Languages</span>
+                        <div class="skill-tags">
+                            <span class="tag">C</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">Bash</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Lua</span>
+                            <span class="tag">Assembly</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <span class="skill-label">Tools</span>
+                        <div class="skill-tags">
+                            <span class="tag">Linux</span>
+                            <span class="tag">Git</span>
+                            <span class="tag">CMake</span>
+                            <span class="tag">GDB</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Windows Server</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">SQLite</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <span class="skill-label">Concepts</span>
+                        <div class="skill-tags">
+                            <span class="tag">Computer Architecture</span>
+                            <span class="tag">Assembler Design</span>
+                            <span class="tag">Data Structures</span>
+                            <span class="tag">Algorithms</span>
+                            <span class="tag">Database Design</span>
+                            <span class="tag">Network Fundamentals</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            <span class="project-name">8-Bit Assembler &amp; Virtual Machine</span>
+                            <a href="https://github.com/jackwiegman" class="project-link" target="_blank" rel="noopener">GitHub →</a>
+                        </div>
+                        <p class="project-desc">
+                            Custom 8-bit CPU simulator with a hand-designed instruction set and byte-addressable
+                            memory. Includes a full assembler that parses source files, generates machine code,
+                            and executes it through a virtual memory address space with register file and stack pointer.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">C</span>
+                            <span class="tag">Assembly</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            <span class="project-name">Team Billing System</span>
+                            <a href="https://github.com/jackwiegman" class="project-link" target="_blank" rel="noopener">GitHub →</a>
+                        </div>
+                        <p class="project-desc">
+                            Collaborative billing system built with a team using Git Enterprise. Designed and
+                            implemented Database and API classes with PostgreSQL integration via libpq, CRUD
+                            helper functions, and a CMake build system with cross-platform presets.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">CMake</span>
+                            <span class="tag">Git</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            <span class="project-name">Linux Dotfiles</span>
+                            <a href="https://github.com/jackwiegman" class="project-link" target="_blank" rel="noopener">GitHub →</a>
+                        </div>
+                        <p class="project-desc">
+                            Comprehensive Arch Linux environment covering systemd boot, disk partitions, and
+                            Hyprland window manager. Includes a Neovim config with LSP, DAP, auto-complete,
+                            and a full CLI-oriented development workflow.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Bash</span>
+                            <span class="tag">Lua</span>
+                            <span class="tag">JSON</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="projects-cta">
+                    <a href="projects.html" class="btn btn-secondary">View All Projects</a>
+                </div>
+            </div>
+        </section>
 
         <footer>
-            <p>
-                Boulder, CO&nbsp;&#124;&nbsp;
-                <a href="mailto:jwiegman5@student.cccs.edu">jwiegman5@student.cccs.edu</a>
-            </p>
+            <div class="container">
+                <p>
+                    Boulder, CO &nbsp;·&nbsp;
+                    <a href="mailto:jawiegman@gmail.com">jawiegman@gmail.com</a>
+                    &nbsp;·&nbsp;
+                    <a href="https://github.com/jackwiegman" target="_blank" rel="noopener">github.com/jackwiegman</a>
+                </p>
+            </div>
         </footer>
+
     </body>
 </html>
