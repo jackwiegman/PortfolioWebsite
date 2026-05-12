@@ -1,0 +1,27 @@
+---
+title: File Dependencies
+---
+flowchart LR
+    classDef html fill:#21262d,stroke:#58a6ff,color:#c9d1d9
+    classDef css  fill:#21262d,stroke:#f9e2af,color:#f9e2af
+    classDef img  fill:#21262d,stroke:#3fb950,color:#a9d5a9
+    classDef pdf  fill:#21262d,stroke:#f38ba8,color:#f38ba8
+
+    index["index.html"]:::html
+    about["about.html"]:::html
+    projects["projects.html"]:::html
+    resume["resume.html"]:::html
+    contact["contact.html"]:::html
+
+    css["styles/styles.css"]:::css
+    photo["images/\njack-self-pic-header.png"]:::img
+    pdf["External/\nJackWiegman_Resume1.pdf"]:::pdf
+
+    index    --> css
+    about    --> css
+    projects --> css
+    resume   --> css
+    contact  --> css
+
+    resume --> photo
+    resume --> pdf
