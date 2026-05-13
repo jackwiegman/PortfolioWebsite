@@ -24,12 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if (i < text.length) {
                 el.textContent = text.slice(0, i + 1);
                 i++;
-                setTimeout(step, 55 + Math.random() * 35);
+                setTimeout(step, 35 + Math.random() * 25);
             } else {
                 setTimeout(() => {
                     el.classList.remove('typing');
                     if (onDone) onDone();
-                }, 550);
+                }, 150);
             }
         })();
     }
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function revealTitle() {
         title.style.transition = 'opacity 0.25s ease';
         title.style.opacity    = '1';
-        setTimeout(() => typeInto(title, 'Software Developer'), 100);
+        setTimeout(() => typeInto(title, 'Software Developer'), 50);
     }
 
     // Stagger-reveal name/summary/actions/photo, then type the title last
@@ -51,10 +51,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Wait for the last element to finish fading before typing title
-        const titleDelay = (revealEls.length - 1) * 120 + 200 + 400;
+        const titleDelay = (revealEls.length - 1) * 120 + 150 + 100;
         setTimeout(revealTitle, titleDelay);
     }
 
     // Kick off: short pause, then type the greeting
-    setTimeout(() => typeInto(greeting, 'whoami', revealContent), 350);
+    setTimeout(() => typeInto(greeting, 'whoami', revealContent), 150);
 });
